@@ -1,0 +1,19 @@
+---
+const currentLanguage = Astro.currentLocale || "es";
+import Nav from "@components/Nav.astro";
+import "../styles/global.css";
+---
+
+<html lang={currentLanguage}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Anthony Volquez - FullStack Developer</title>
+  </head>
+  <body>
+    <Nav />
+    <slot />
+  </body>
+</html>

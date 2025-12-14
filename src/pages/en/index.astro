@@ -1,0 +1,14 @@
+---
+import Experience from "@components/Experience.astro";
+import Hero from "@components/Hero.astro";
+import MainLayout from "@layouts/MainLayout.astro";
+
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("experienceEn");
+---
+
+<MainLayout>
+  <Hero />
+  <Experience projects={projects.map((p) => p.data)} />
+</MainLayout>

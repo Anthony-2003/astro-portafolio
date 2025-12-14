@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Home",
+    "experience": "Experience",
+    "projects": "Projects",
+    "technologies": "Technologies",
+    "aboutMe": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greetings": "Hello, I'm Anthony Volquez",
+    "description": "I develop practical solutions  with attention <br> to detail and a passion for code"
+  }
+}

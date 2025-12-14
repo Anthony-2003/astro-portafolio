@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "technologies": "Tecnologías",
+    "aboutMe": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greetings": "Hola, soy Anthony Volquez",
+    "description": "Desarrollo soluciones prácticas con atención <br> al detalle y pasión por el código"
+  }
+}
