@@ -1,12 +1,17 @@
 ---
+import useTranslations from '@utils/i18n';
 import Title from './ui/Title.astro';
+import type { Experience } from 'types/types';
+
+const t = useTranslations(Astro.currentLocale || "es");
+
 
 interface Props {
-  projects: Project[];
+  projects: Experience[];
 }
 
 interface Project {
-  title: string;
+  title: string;  
   company: string;
   date: string;
   responsabilities: string[];
@@ -17,8 +22,8 @@ const { projects } = Astro.props;
 ---
 
 
-<section class="relative py-10 bg-[#13151A]" id="experience">
-  <Title title='Experience'/>
+<section class="relative py-10" id="experience">
+  <Title title={t('experience.title')}/>
   <div class="flex flex-row justify-center gap-6">
     
 <ol class="relative flex flex-col gap-8 border-l-2 border-pink-400/40 pl-6 w-[80%]">

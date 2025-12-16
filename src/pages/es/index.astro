@@ -1,14 +1,25 @@
 ---
+import AboutMe from "@components/AboutMe.astro";
+import Contact from "@components/Contact.astro";
 import Experience from "@components/Experience.astro";
+import Footer from "@components/Footer.astro";
 import Hero from "@components/Hero.astro";
+import Projects from "@components/Projects.astro";
+import Technologies from "@components/Technologies.astro";
 import MainLayout from "@layouts/MainLayout.astro";
 
 import { getCollection } from "astro:content";
 
-const projects = await getCollection("experienceEs");
+const experiences = await getCollection("experienceEs");
+const projects = await getCollection("projectsEs");
 ---
 
 <MainLayout>
   <Hero />
-  <Experience projects={projects.map((p) => p.data)} />
+  <Experience projects={experiences.map((experience) => experience.data)} />
+  <Projects projects={projects.map((project) => project.data)} />
+  <Technologies />
+  <AboutMe />
+  <Contact />
+  <Footer />
 </MainLayout>

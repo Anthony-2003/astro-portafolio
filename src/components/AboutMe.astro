@@ -1,0 +1,17 @@
+---
+import useTranslations from "@utils/i18n";
+import Title from "./ui/Title.astro";
+const t = useTranslations(Astro.currentLocale || "es");
+---
+
+<section class="w-[80%] m-auto" id="aboutMe">
+  <Title title={t("aboutMe.title")} />
+  <div class="mt-4 space-y-4">
+    <h2
+      class="text-3xl font-bold text-transparent title"
+      set:html={t("aboutMe.subtitle")}
+    />
+    <p class="text-white text-lg">{t("aboutMe.text1")}</p>
+    <p class="text-white text-lg">{t("aboutMe.text2")}</p>
+  </div>
+</section>

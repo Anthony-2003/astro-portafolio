@@ -1,0 +1,98 @@
+---
+import { Icon } from "astro-icon/components";
+import type { Project } from "types/types";
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+
+const imageSrc = project.imageUrl;
+const githubUrl = project.githubUrl;
+const projectUrl = project.projectUrl;
+---
+
+<div
+  class="group max-w-[460px] mx-auto overflow-hidden rounded-2xl bg-zinc-900 text-white
+         shadow-[0_20px_40px_rgba(0,0,0,0.6)]
+         transition-all duration-500 ease-out
+         hover:-translate-y-3 hover:scale-[1.02]
+         hover:shadow-[0_35px_80px_rgba(236,72,153,0.25)]
+         perspective-1000"
+>
+  <!-- Imagen -->
+  <div class="relative overflow-hidden">
+    <img
+      src={imageSrc}
+      alt="Startup CRM"
+      class="h-56 w-full object-cover
+             transition-transform duration-700
+             group-hover:scale-110"
+    />
+
+    <!-- Glow overlay -->
+    <div
+      class="pointer-events-none absolute inset-0
+             bg-linear-to-tr` from-pink-500/10 via-transparent to-indigo-500/10
+             opacity-0 transition-opacity duration-500
+             group-hover:opacity-100"
+    >
+    </div>
+  </div>
+
+  <!-- Contenido -->
+  <div class="p-6 space-y-4">
+    <!-- Título -->
+    <h3
+      class="text-2xl font-bold transition-colors duration-300
+             group-hover:text-pink-400"
+    >
+      {project.name}
+    </h3>
+
+    <!-- Descripción -->
+    <p class="text-zinc-300 w-full">
+      {project.description}
+    </p>
+
+    <!-- Tecnologías -->
+    <div class="flex flex-wrap gap-2">
+      {
+        project.technologies.map((tecnology) => (
+          <span class="rounded-full border border-pink-500 px-3 py-1 text-xs text-pink-400">
+            {tecnology}
+          </span>
+        ))
+      }
+    </div>
+
+    <!-- Botones -->
+    <div class="flex gap-4 pt-4">
+      {
+        githubUrl && (
+          <a
+            target="_blank"
+            href={githubUrl}
+            class="flex gap-2 w-full text-center justify-center items-center rounded-xl border border-zinc-700 px-5 py-2 text-sm
+               transition-all duration-300
+               hover:bg-zinc-800 hover:-translate-y-0.5"
+          >
+            <Icon name="github" size={20} /> GitHub
+          </a>
+        )
+      }
+
+      <a
+        href={projectUrl}
+        target="_blank"
+        class="flex gap-2 w-full rounded-xl text-center justify-center items-center bg-pink-500 px-5 py-2 text-sm font-semibold text-white
+               transition-all duration-300
+               hover:bg-pink-600 hover:shadow-[0_10px_30px_rgba(236,72,153,0.5)]
+               hover:-translate-y-0.5"
+      >
+        <Icon name="world" size={20} color="white" /> Ver
+      </a>
+    </div>
+  </div>
+</div>

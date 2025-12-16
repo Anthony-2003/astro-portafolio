@@ -3,6 +3,11 @@ import useTranslations from "@utils/i18n";
 import { Icon } from "astro-icon/components";
 
 const t = useTranslations(Astro.currentLocale || "es");
+
+const cvUrl =
+  Astro.currentLocale == "es"
+    ? "cv/Anthony Volquez - Desarrollo de Software.pdf"
+    : "cv/Anthony Volquez - Software Development.pdf";
 ---
 
 <section
@@ -56,4 +61,14 @@ const t = useTranslations(Astro.currentLocale || "es");
       </a>
     </div>
   </div>
+
+  <a
+    class="mt-6 p-4 h-15 text-white rounded-full font-bold bg-white/15 flex items-center justify-center
+            backdrop-blur-sm hover:bg-white/25 transition transform hover:-translate-y-1 cursor-pointer"
+    target="_blank"
+    href={cvUrl}
+  >
+    <Icon name="download" size={15} color="white" class="mr-1" />
+    {t("hero.cvButton")}
+  </a>
 </section>

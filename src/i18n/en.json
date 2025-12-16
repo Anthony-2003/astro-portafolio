@@ -9,6 +9,30 @@
   },
   "hero": {
     "greetings": "Hello, I'm Anthony Volquez",
-    "description": "I develop practical solutions  with attention <br> to detail and a passion for code"
+    "description": "I develop practical solutions  with attention <br> to detail and a passion for code",
+    "cvButton": "Download CV"
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "technologies": {
+    "title": "Technologies"
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "subtitle": "Hi, I'm Anthony",
+    "text1": "I am a web developer with over a year of experience, specializing in JavaScript, React, Next.js, Astro, Node.js, and databases. My main focus is frontend development, creating modern, responsive, and accessible web interfaces that deliver exceptional user experiences.",
+    "text2": "I also have experience working on fullstack projects and collaborating in multidisciplinary teams. I quickly adapt to new technologies and always strive to bring efficiency and creativity to every project. I graduated with honors from the Technological Institute of the Americas, achieving a 4.0 GPA. I am currently continuing to expand my knowledge through courses and personal projects, staying up to date with the latest technologies."
+  },
+  "form": {
+    "title": "Contact Me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "messagePlaceholder": "Leave your message here",
+    "submit": "Send"
   }
 }

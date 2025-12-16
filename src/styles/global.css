@@ -5,6 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #13151A;
+}
+
 select,
 ::picker(select) {
   appearance: base-select;
@@ -20,6 +24,65 @@ select,
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: aurora 8s ease-in-out infinite alternate;
+}
+
+
+.wave {
+  position: absolute;
+  inset: 0;
+  height: 80px;
+  background-image: url("/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave1 {
+  z-index: 10;
+  opacity: 1;
+  animation: wave 4s linear infinite;
+}
+
+.wave2 {
+  z-index: 9;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: waveReverse 4s linear infinite;
+}
+
+.wave3 {
+  z-index: 10;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: wave 3s linear infinite;
+}
+
+.wave4 {
+  z-index: 9;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: waveReverse 3s linear infinite;
+}
+
+/* Buttons */
+.footer-btn {
+  @apply inline-block text-[1.1rem] tracking-tight px-5 py-2
+         text-neutral-800 transition-all duration-500
+         hover:bg-pink-300/60 hover:shadow-2xl;
+}
+
+/* Text shadow */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+/* Animations */
+@keyframes wave {
+  from { background-position-x: 1000px; }
+  to   { background-position-x: 0; }
+}
+
+@keyframes waveReverse {
+  from { background-position-x: 0; }
+  to   { background-position-x: 1000px; }
 }
 
 @keyframes aurora {
