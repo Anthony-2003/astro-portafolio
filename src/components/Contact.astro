@@ -78,7 +78,9 @@ const t = useTranslations(Astro.currentLocale || "es");
   import "toastify-js/src/toastify.css";
 
   document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("contactForm");
+    const form = document.getElementById(
+      "contactForm"
+    ) as HTMLFormElement | null;
 
     if (!form) return;
 
@@ -102,6 +104,8 @@ const t = useTranslations(Astro.currentLocale || "es");
             position: "right",
             backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
           }).showToast();
+
+          form.reset();
         } else {
           Toastify({
             text: "Error al enviar el mensaje",
