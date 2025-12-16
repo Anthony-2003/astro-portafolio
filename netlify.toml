@@ -1,0 +1,16 @@
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+# Redirecciones para forzar trailingSlash: never en las raíces de locales
+[[redirects]]
+  from = "/es/"
+  to = "/es"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/"
+  to = "/en"
+  status = 301
+  force = true
