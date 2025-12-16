@@ -85,15 +85,26 @@ const navItems = [
   const menu = document.getElementById("menu");
   const closeMenuBtn = document.getElementById("close-btn");
 
+  // Abrir menú
   btn?.addEventListener("click", () => {
      menu?.classList.toggle("max-xl:hidden");
-     closeMenuBtn?.classList.toggle("hidden")
-     
+     closeMenuBtn?.classList.toggle("hidden");
   });
 
+  // Cerrar menú
   closeMenuBtn?.addEventListener("click", () => {
      menu?.classList.toggle("max-xl:hidden");
-     closeMenuBtn?.classList.toggle("hidden")
+     closeMenuBtn?.classList.toggle("hidden");
+  });
 
-  })
+  // Recuperar todos los <a> dentro del menú
+  const menuLinks = menu?.querySelectorAll("a");
+
+  menuLinks?.forEach((link) => {
+    link.addEventListener("click", () => {
+      // Cada vez que se hace click en un link:
+      menu.classList.add("max-xl:hidden"); // ocultar menú
+      closeMenuBtn.classList.add("hidden"); // ocultar botón de cerrar
+    });
+  });
 </script>
