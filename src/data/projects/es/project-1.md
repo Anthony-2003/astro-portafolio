@@ -1,5 +1,5 @@
 ---
-imageUrl: "https://res.cloudinary.com/delxjidoh/image/upload/v1765735191/oasis_kmobeu.png"
+imageUrl: "https://res.cloudinary.com/delxjidoh/image/upload/v1766692361/329_1x_shots_so_gwvfbq.png"
 name: "The Wild Oasis"
 description: "Este proyecto es un sistema de gestión de reservas hoteleras diseñado para que el personal administrativo pueda gestionar de forma eficiente las reservas y las operaciones del hotel."
 technologies:

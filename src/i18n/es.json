@@ -34,5 +34,10 @@
     "message": "Mensaje",
     "messagePlaceholder": "Deja aquí tu mensaje",
     "submit": "Enviar"
+  },
+  "footer": {
+    "description": "Construyendo experiencias web limpias, escalables y centradas en el usuario.",
+    "title": "Trabajemos juntos",
+    "subtitle": "Desarrollado con Astro y Tailwind · Mejorando un 1 % cada día 🚀"
   }
 }

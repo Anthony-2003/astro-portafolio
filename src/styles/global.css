@@ -9,9 +9,14 @@ body {
   background-color: #13151A;
 }
 
+
 select,
 ::picker(select) {
   appearance: base-select;
+}
+
+select > option {
+  color: #000;
 }
 
 .title {
@@ -65,8 +70,9 @@ select,
 /* Buttons */
 .footer-btn {
   @apply inline-block text-[1.1rem] tracking-tight px-5 py-2
-         text-neutral-800 transition-all duration-500
-         hover:bg-pink-300/60 hover:shadow-2xl;
+         text-neutral-800
+         transition-all duration-300 ease-out
+         transform hover:scale-120fd hover:text-neutral-950;
 }
 
 /* Text shadow */

@@ -34,5 +34,10 @@
     "message": "Message",
     "messagePlaceholder": "Leave your message here",
     "submit": "Send"
+  },
+  "footer": {
+    "description": "Building clean, scalable and user-focused web experiences.",
+    "title": "Let’s work together",
+    "subtitle": "Built with Astro & Tailwind · Always improving 1% every day 🚀"
   }
 }
