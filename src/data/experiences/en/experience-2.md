@@ -2,6 +2,8 @@
 title: "Pega Developer Intern"
 company: "BHD Bank"
 date: "September 2023 – December 2023"
+dateStart: "2023-09"
+dateEnd: "2023-12"
 responsabilities:
   [
     "Contributed to the optimization of financial processes through the application of Scrum methodology, improving workflow efficiency and reducing response times during the internship.",

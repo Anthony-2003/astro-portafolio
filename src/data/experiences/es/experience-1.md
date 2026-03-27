@@ -1,7 +1,9 @@
 ---
 title: "Desarrollador FullStack"
 company: "Precisa Group SRL"
-date: "Septiembre 2024 - Actual"
+date: "Septiembre 2024 - Febrero 2026"
+dateStart: "2024-09"
+dateEnd: "2026-02"
 responsabilities: [
   "Diseñar y desarrollar APIs REST para soportar flujos de trabajo empresariales",
   "Construir y optimizar herramientas internas para mejorar la eficiencia operativa",

@@ -11,12 +11,21 @@ import MainLayout from "@layouts/MainLayout.astro";
 import { getCollection } from "astro:content";
 
 const experiences = await getCollection("experienceEs");
+const sortedExperiences = experiences.sort((a, b) =>
+  new Date(b.data.dateEnd).getTime() - new Date(a.data.dateEnd).getTime()
+);
+
+console.log(experiences)
+
 const projects = await getCollection("projectsEs");
+
+
+
 ---
 
 <MainLayout>
   <Hero />
-  <Experience projects={experiences.map((experience) => experience.data)} />
+  <Experience projects={sortedExperiences.map((experience) => experience.data)} />
   <Projects projects={projects.map((project) => project.data)} />
   <Technologies />
   <AboutMe />

@@ -2,6 +2,8 @@
 title: "Pasante Desarrollador Pega"
 company: "Banco BHD"
 date: "Septiembre 2023 – Diciembre 2023"
+dateStart: "2023-09"
+dateEnd: "2023-12"
 responsabilities:
   [
     "Contribuí a la optimización de procesos financieros mediante la aplicación de la metodología Scrum, mejorando la eficiencia del flujo de trabajo y reduciendo los tiempos de respuesta durante la pasantía.",

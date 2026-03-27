@@ -6,6 +6,8 @@ export const experienceSchema = z.object({
   title: z.string(),
   company: z.string(),
   date: z.string(),
+  dateStart: z.string(),
+  dateEnd: z.string(),
   responsabilities: z.array(z.string()),
 });
 
