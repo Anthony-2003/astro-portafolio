@@ -5,5 +5,5 @@ description: "Este proyecto es un sistema de gestión de reservas hoteleras dise
 technologies:
   ["Supabase", "React", "React Hook Form", "React Router", "Styled Components", "Recharts", "React Query"]
 githubUrl: "https://github.com/Anthony-2003/wild-oasis-proyect/tree/master"
-projectUrl: "https://wild-oasis-reactt.netlify.app/login"
+projectUrl: "https://wild-oasis-reactt.pages.dev/login"
 ---
